@@ -1,58 +1,45 @@
-/* styles.css */
+:root {
+  --primary: #6c63ff;       /* Roxo moderno */
+  --secondary: #4d44db;    /* Tom mais escuro */
+  --background: #f8f9fa;   /* Fundo claro */
+  --text: #333;           /* Texto escuro */
+  --card-bg: #ffffff;     /* Fundo dos cards */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif; /* Adicione no HTML: <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> */
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-header, nav, section, footer {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 0;
+}
+/* Mobile First */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Menu hamburguer vai controlar isso */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block; /* Mostrar botão mobile */
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 coluna em mobile */
+  }
+}
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
-header {
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-
-.projeto {
-    margin-bottom: 20px;
-}
-
-.projeto img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+.project-card:hover .project-img {
+  transform: scale(1.05);
 }
