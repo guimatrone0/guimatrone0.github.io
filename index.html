@@ -13,48 +13,42 @@
 </head>
 <body>
     <!-- Header/Navegação -->
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="logo">GM</a>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+    <header class="glass-nav">
+      <div class="logo">GM</div>
+      <nav>
+        <a href="#home" class="nav-link hover-underline">Início</a>
+        <a href="#about" class="nav-link hover-underline">Sobre</a>
+        <a href="#projects" class="nav-link hover-underline">Projetos</a>
+        <a href="#contact" class="nav-link hover-underline">Contato</a>
+      </nav>
     </header>
 
     <!-- Seção Hero -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Guilherme Matrone</h1>
-            <p>Desenvolvedor Front-End</p>
-            <a href="#projects" class="btn">Ver Projetos</a>
-        </div>
+        <h1>Guilherme Matrone</h1>
+        <p class="typewriter">Desenvolvedor Front-End</p>
+        <a href="#projects" class="neon-btn">Ver Projetos</a>
     </section>
 
     <!-- Seção Sobre -->
-    <section id="about" class="section">
-        <h2>Sobre Mim</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Olá! Sou desenvolvedor front-end com experiência em HTML, CSS e JavaScript. Adoro criar interfaces modernas e responsivas.</p>
-                <div class="skills">
-                    <span>Java</span>
-                    <span>Python</span>
-                    <span>Docker</span>
-                    <span>VUE 3</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Git</span>
-                    <span>Postgre SQL</span>
-                </div>
-            </div>
+    <section id="about">
+        <div class="about-grid">
+         <div class="about-text">
+           <h2>Sobre Mim</h2>
+           <p>Desenvolvedor front-end especializado em criar interfaces performáticas e acessíveis.</p>
+         </div>
+        <div class="skills-container">
+            <div class="skill-chip">Java</div>
+            <div class="skill-chip">SpringBoot</div>
+            <div class="skill-chip">Maven</div>
+            <div class="skill-chip">Docker</div>
+            <div class="skill-chip">Vue 3</div>
+            <div class="skill-chip">Python</div>
+            <div class="skill-chip">TypeScript</div>
+            <div class="skill-chip">Git</div>
+            <div class="skill-chip">CSS</div>
+            <div class="skill-chip">JavaScript</div>
+        </div>
             <div class="about-img">
                 <img src="assets/profile.jpg" alt="Guilherme Matrone" loading="lazy">
             </div>
@@ -90,32 +84,69 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Adicione mais projetos conforme necessário -->
+            <!-- Projeto 3 -->
+            <div class="project-card">
+             <div class="project-content">
+                <h3>Landing Page Moderna</h3>
+                <div class="tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Demo</a>
+                  <a href="#" class="link-btn outline">Código</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Seção Contato -->
     <section id="contact" class="section">
         <h2>Contato</h2>
-        <div class="contact-content">
+        <div class="contact-container">
+            <!-- Formulário -->
             <form class="contact-form">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu E-mail" required>
-                <textarea placeholder="Sua Mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar Mensagem</button>
+            <div class="form-group">
+                <input type="text" id="name" class="form-input" required>
+                <label for="name">Seu Nome</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" class="form-input" required>
+                <label for="email">Seu E-mail</label>
+            </div>
+            
+            <div class="form-group">
+                <textarea id="message" class="form-input" rows="4" required></textarea>
+                <label for="message">Sua Mensagem</label>
+            </div>
+            
+            <button type="submit" class="glow-btn">
+                <span class="btn-text">Enviar Mensagem</span>
+                <span class="btn-glow"></span>
+            </button>
             </form>
+
+            <!-- Redes Sociais -->
+            <div class="social-container">
+            <h3>Ou me encontre em:</h3>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2023 Guilherme Matrone. Todos os direitos reservados.</p>
+    <footer>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>© 2023 Guilherme Matrone</p>
     </footer>
 
     <!-- JavaScript -->
