@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Matrone | Portfólio</title>
-    <meta name="description" content="Portfólio de Guilherme Matrone - Desenvolvedor Front-End">
-    <link rel="stylesheet" href="style.css">
+    <title>Guilherme Matrone | Desenvolvedor Full-Stack</title>
+    <meta name="description" content="Portfólio profissional de Guilherme Matrone - Especialista em Java, Vue.js e desenvolvimento web">
+    
+    <!-- Pré-carregamento de recursos críticos -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="font" crossorigin>
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Ícones (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    
+    <!-- Font Awesome (versão otimizada) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- CSS principal (caminho absoluto para GitHub Pages) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon (adicione depois) -->
+    <!-- <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"> -->
+    
+    <!-- Meta tags para SEO e compartilhamento -->
+    <meta property="og:title" content="Guilherme Matrone | Portfólio">
+    <meta property="og:description" content="Desenvolvedor Full-Stack especializado em Java e Vue.js">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guimatrone0.github.io">
+    <!-- <meta property="og:image" content="/assets/preview.jpg"> -->
 </head>
-<body>
-    <!-- Header/Navegação -->
-    <header class="glass-nav">
-      <div class="logo">GM</div>
-      <nav>
-        <a href="#home" class="nav-link hover-underline">Início</a>
-        <a href="#about" class="nav-link hover-underline">Sobre</a>
-        <a href="#projects" class="nav-link hover-underline">Projetos</a>
-        <a href="#contact" class="nav-link hover-underline">Contato</a>
-      </nav>
-    </header>
 
     <!-- Seção Hero -->
     <section id="home" class="hero">
@@ -61,7 +70,7 @@
         <div class="project-grid">
             <!-- Projeto 1 -->
             <div class="project-card">
-                <img src="assets/projeto1.jpg" alt="Projeto 1" loading="lazy">
+                <img src="images01.jpg" alt="Projeto 1" loading="lazy">
                 <div class="project-info">
                     <h3>Landing Page Moderna</h3>
                     <p>Tecnologias: Java, HTML, CSS, JavaScript, PHP.</p>
@@ -74,7 +83,7 @@
 
             <!-- Projeto 2 -->
             <div class="project-card">
-                <img src="assets/projeto2.jpg" alt="Projeto 2" loading="lazy">
+                <img src="images02.jpg" alt="Projeto 2" loading="lazy">
                 <div class="project-info">
                     <h3>App de Clima</h3>
                     <p>Tecnologias: JavaScript, API</p>
